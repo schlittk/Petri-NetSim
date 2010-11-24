@@ -143,7 +143,7 @@ public class JModellerApplication extends MDI_DrawApplication {
         menu.insertSeparator(6);
         return menu;
     }
-
+//
     /**
      * Creates the drawing view used in this application.
      * You need to override this method to use a DrawingView
