@@ -32,7 +32,7 @@ public class JModellerApplication extends MDI_DrawApplication {
      * Create a new instance of JModellerApplication
      */
     public JModellerApplication() {
-        super("Keith Schlittkus, Felix Schwarz & Frank Imler - Petri°NetSim");
+        super("Keith Schlittkus, Felix Schwarz & Frank Imler - Petri-NetSim");
     }
 
     /**
@@ -45,7 +45,7 @@ public class JModellerApplication extends MDI_DrawApplication {
      */
     protected void createTools(JToolBar palette) {
         super.createTools(palette);
-
+/*
         Tool tool = new ConnectedTextTool(this, new TextFigure());
         palette.add(createToolButton(IMAGES+"ATEXT", "Label", tool));
         
@@ -71,7 +71,7 @@ public class JModellerApplication extends MDI_DrawApplication {
         palette.add(createToolButton(DIAGRAM_IMAGES+"Transition", "Transition", tool));
         //											^--- HABEN WIR MIT PAINT GEMALT ;)
         tool = new ConnectionTool(this, new InheritanceLineConnection());
-        palette.add(createToolButton(DIAGRAM_IMAGES+"INHERITANCE", "Inheritance Tool", tool));
+        palette.add(createToolButton(DIAGRAM_IMAGES+"INHERITANCE", "Inheritance Tool", tool));*/
     }
 
     /**
