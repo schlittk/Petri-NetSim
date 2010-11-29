@@ -45,20 +45,27 @@ public class JModellerApplication extends MDI_DrawApplication {
      */
     protected void createTools(JToolBar palette) {
         super.createTools(palette);
-/*
+
         Tool tool = new ConnectedTextTool(this, new TextFigure());
         palette.add(createToolButton(IMAGES+"ATEXT", "Label", tool));
-        
-        tool = new CreationTool(this, new ClassFigure()) {
+        StelleFigure te = new StelleFigure();
+        tool = new CreationTool(this, te ) {
         	// HIER MUSS EINE STELLE_FIGURE() ERZEUGT WERDEN
              public void mouseDrag(MouseEvent e, int x, int y) {
                  // don't track drag events during creation: figure size is
                  //  calculated and independent of current size
+            	 //System.out.println("Maus x: " + x);
              }
+             /*public void mouseDown(MouseEvent e, int x, int y){
+            	 System.out.println("Maus x: " + x);
+            	 te.setMausPosX(x);
+            	 super.mouseDown(e, x, y);
+             }*/
         };
+        //tool.A.getAnchorPoint();
         palette.add(createToolButton(IMAGES+"ELLIPSE", "Stelle", tool));
 
-        tool = new ConnectionTool(this, new AssociationLineConnection());
+ /*       tool = new ConnectionTool(this, new AssociationLineConnection());
         palette.add(createToolButton(IMAGES+"LINE", "Association Tool", tool));
 
         tool = new CreationTool(this, new ClassFigure()) {
